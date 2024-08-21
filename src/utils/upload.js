@@ -2,8 +2,8 @@
 // // 填写自己腾讯云cos中的key和id (密钥)
 // // https://console.cloud.tencent.com/cam/capi
 // const cos = new COS({
-//   SecretId: 'AKIDzmJbcMozu2tTmoZ3FBpCI7fwxjDRO4Tb',
-//   SecretKey: 'sTptgCRP5UhcHfoiKfjWyEEzUjiRvA9s',
+//   SecretId: '',
+//   SecretKey: '',
 // })
 
 
@@ -14,8 +14,8 @@ export const uploadCOS = (file) => {
       // 执行上传操作
       cos.putObject(
         {
-          Bucket: 'git-1304113371' /* 存储桶 */,
-          Region: 'ap-nanjing' /* 存储桶所在地域，必须字段 */,
+          Bucket: '' /* 存储桶 */,
+          Region: '' /* 存储桶所在地域，必须字段 */,
           Key: file.name /* 文件名 */,
           StorageClass: 'STANDARD', // 上传模式, 标准模式
           Body: file, // 上传文件对象
